@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="price">Selling Price:</label>
+        <input type="number" value="0" min="0" max="99999999" name="price" id="price" />
+        <label for="productName">Product Name:</label>
+        <input type="text" name="productName" id="productName" />
+        <label for="category">Choose a category:</label>
+        <select name="category" id="category">
+            <option value="electronic">Electronic</option>
+            <option value="skincare">Skincare</option>
+            <option value="food">Food</option>
+        </select>
+        <button type="submit">Add Product</button>
+    </form>
+    <h1>Products</h1>
+    <h2 id="electronic">Electronic Items</h2>
+    <ul></ul>
+    <h2 id="skincare">Skin Care</h2>
+    <ul></ul>
+    <h2 id="food">Food</h2>
+    <ul></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
